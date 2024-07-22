@@ -15,6 +15,7 @@ namespace MagicLandExplorer
                 Console.WriteLine("JSON file not found at: " + jsonFilePath);
                 return;
             }
+
             string json = File.ReadAllText("data/MagicLandData.json");
             List<Category> categories = JsonConvert.DeserializeObject<List<Category>>(json);
 
